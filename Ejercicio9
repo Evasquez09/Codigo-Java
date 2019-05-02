@@ -1,0 +1,17 @@
+import javax.swing.JOptionPane;
+
+public class IVA {
+	
+	public static void main(String[] args) {
+		
+		String numero = JOptionPane.showInputDialog("Introduce el precio del producto sin IVA");
+		
+		double precio = Double.parseDouble(numero);
+		
+		final double IVA = 0.21;
+		
+		double precioFinal = (precio * IVA) + precio;
+		
+		System.out.println("El precio del producto con IVA es de: "+precioFinal);
+	}
+}
