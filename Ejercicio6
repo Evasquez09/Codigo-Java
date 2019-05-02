@@ -1,0 +1,17 @@
+import javax.swing.JOptionPane;
+
+public class LeerNumeroTeclado {
+	
+	public static void main(String[] args) {
+		
+		String n = JOptionPane.showInputDialog("Introduce el numero");
+		
+		int numero = Integer.parseInt(n);
+		
+		if (numero % 2 == 0) {
+			System.out.println("El numero es divisible entre 2");
+		}else {
+			System.out.println("No lo es");
+		}
+	}
+}
