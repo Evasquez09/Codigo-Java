@@ -1,0 +1,15 @@
+import javax.swing.JOptionPane;
+
+public class numeroASCII {
+
+	public static void main(String[] args) {
+		
+		String n = JOptionPane.showInputDialog("Introduce el numero");
+		
+		int codigo = Integer.parseInt(n);
+		
+		char codigoASCII = (char)codigo;
+		
+		System.out.println(codigoASCII);
+	}
+}
