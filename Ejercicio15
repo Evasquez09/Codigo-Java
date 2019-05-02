@@ -1,0 +1,13 @@
+import javax.swing.JOptionPane;
+
+public class DoWhile {
+	
+	public static void main(String[] args) {
+		int num;
+		do {
+			String numero = JOptionPane.showInputDialog("Introduce un número mayor que 0");
+			num = Integer.parseInt(numero);
+		}while(num <=0);
+		System.out.println(num);
+		}	
+	}
