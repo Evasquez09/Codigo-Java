@@ -1,0 +1,15 @@
+
+public class Buclefor {
+	
+	public static void main(String[] args) {
+		
+		/*
+		 * Estrcutura de un bucle for: for(inicializacion;condicion;incremento){
+		 * instrucciones
+		 */
+		
+		for (int num=1; num<=100; num++) {
+			System.out.println(num);
+		}
+	}
+}
