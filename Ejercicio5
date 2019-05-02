@@ -1,0 +1,16 @@
+import javax.swing.JOptionPane;
+
+public class areacirculo {
+
+	public static void main(String[] args) {
+		
+		String texto = JOptionPane.showInputDialog("Introduce el radio");
+		
+		//String a double
+		double radio = Double.parseDouble(texto);
+		
+		double area = Math.PI*Math.pow(radio, 2);
+		
+		System.out.println("Area es igual a "+area+" m2");
+	}
+}
