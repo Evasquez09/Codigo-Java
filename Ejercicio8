@@ -1,0 +1,15 @@
+import javax.swing.JOptionPane;
+
+public class charASCII {
+
+		public static void main(String[] args) {
+			
+			String n = JOptionPane.showInputDialog("Introduce el carácter");
+			//Pasar el string a char con el metodo charAt
+			char caracter = n.charAt(0);
+			//Pasar el caracter a codigo
+			int codigo = (int)caracter;
+			
+			System.out.println(codigo);
+		}
+	}
