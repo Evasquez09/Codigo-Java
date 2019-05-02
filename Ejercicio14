@@ -1,0 +1,28 @@
+import javax.swing.JOptionPane;
+import java.math.*;
+
+public class Appecuacion {
+	
+	public static void main(String[] args) {
+		/*
+		 * ax2 + bx +c = 0
+		 */
+		String variable1 = JOptionPane.showInputDialog("Introduce la variable a");
+		int a = Integer.parseInt(variable1);
+		String variable2 = JOptionPane.showInputDialog("Introduce la variable b");
+		int b = Integer.parseInt(variable2);
+		String variable3 = JOptionPane.showInputDialog("Introduce la variable c");
+		int c = Integer.parseInt(variable3);
+		
+		double discriminante = Math.pow(b, 2)-(4*a*c);
+		System.out.println(">>"+discriminante);
+		
+		if (discriminante > 0) {
+			double x1 = ((b*(-1)) + Math.sqrt(discriminante))/(2*a);
+			double x2 = ((b*(-1)) - Math.sqrt(discriminante))/(2*a);
+			System.out.println("El valor de x1 es "+x1+" y el valor de x2 es "+x2);
+        }else{
+            System.out.println("El discriminante es negativo");
+        }
+	}
+}
