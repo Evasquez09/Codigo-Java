@@ -1,0 +1,11 @@
+import javax.swing.JOptionPane;
+
+public class EjercicioJOptionPane {
+	
+	public static void main(String[] args) {
+		
+		String nombre = JOptionPane.showInputDialog("Escribe tu nombre");
+		
+		System.out.println("Bienvenido "+nombre);
+	}
+}
