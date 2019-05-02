@@ -1,0 +1,14 @@
+public class bucleWhile {
+	
+	public static void main(String[] args) {
+		
+		//Definir variable numero
+		int num =1;
+		//Definir el bucle while(inicialización;condición;incremento)
+		while(num<=100) {
+			System.out.println(num);
+			//Definir incremento, mientras cumple condicion de menor a 100.
+			num++;
+		}			
+	}
+}
